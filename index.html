@@ -169,30 +169,31 @@
     .mini span{display:inline-flex; gap:8px; align-items:center}
 
     /* Slider */
-    .slider{
-      position:relative;
-      border-radius: var(--radius);
-      overflow:hidden;
-      min-height: 360px;
-      background: rgba(255,255,255,.03);
-      border:1px solid var(--line);
-      box-shadow: var(--shadow);
-    }
+  .slider{
+  position:relative;
+  border-radius: var(--radius);
+  overflow:hidden;
+  min-height: 360px;
+  height: 100%;
+  background: rgba(255,255,255,.03);
+  border:1px solid var(--line);
+  box-shadow: var(--shadow);
+}
     .slides{
-      display:flex;
-      width:100%;
-      height:360px;
-      transition: transform .5s ease;
-      will-change: transform;
-    }
-    .slide{
-      flex: 0 0 100%;
-      width: 100%;
-      height: 360px;
-      background-size: cover;
-      background-position:center;
-      position:relative;
-    }
+  display:flex;
+  width:100%;
+  height:100%;
+  transition: transform .5s ease;
+  will-change: transform;
+}
+   .slide{
+  flex: 0 0 100%;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position:center;
+  position:relative;
+}
     .slide::after{
       content:"";
       position:absolute; inset:0;
